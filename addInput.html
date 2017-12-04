@@ -1,0 +1,33 @@
+<!--Write a function that takes 1 arg, an integer. Let's say the integer is n. Return the sum of all numbers up to n. For example if you pass 4 to the function, the function will return the sum of 1 + 2 + 3 + 4.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exercise</title>
+</head>
+<body>
+
+    <div id="output"></div>
+
+    <script>
+    "use strict";
+
+    var $ = function(id) { return document.getElementById(id); };
+
+    var input = prompt("Enter a Number");
+
+    var addInput = function(number) {
+        var sum = 0;
+        for (var i = 0; i <= number; i++) {
+            sum += i;
+        }
+        return sum;
+    };
+
+    $("output").innerHTML = addInput(input);
+
+    </script>
+
+</body>
+</html>
